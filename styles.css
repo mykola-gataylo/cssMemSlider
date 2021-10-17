@@ -1,4 +1,5 @@
 @import "./animation.css";
+@import "./media.css";
 
 /* Base */
 
@@ -7,6 +8,8 @@
   padding: 0;
   box-sizing: border-box;
   /* animation-play-state: paused !important; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Container */
@@ -39,6 +42,36 @@ img {
   box-shadow: 0 0 0.75rem rgb(255 255 255 / 75%);
 }
 
+.text-container {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.text {
+  margin-top: 1rem;
+  display: none;
+}
+
+.text1 span {
+  color: #ff7f27;
+  font-weight: bold;
+}
+
+.text2 span {
+  color: #22b14c;
+  font-weight: bold;
+}
+
+.text3 span {
+  color: #ffaec9;
+  font-weight: bold;
+}
+
+.text4 span {
+  color: #99d9ea;
+  font-weight: bold;
+}
+
 /* Control */
 
 input {
@@ -46,7 +79,6 @@ input {
 }
 
 .control-container {
-  margin-top: 1rem;
   align-self: flex-end;
 }
 
@@ -56,7 +88,7 @@ input {
   padding: 0.5rem;
   display: inline-block;
   background: #71abff;
-  border: 0.25rem solid #71abff;
+  border: 0.2rem solid #71abff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -73,12 +105,12 @@ input {
 }
 
 .control-dots:hover {
-  border: 0.25rem solid #fff;
+  border: 0.2rem solid #fff;
   background-color: #fff;
 }
 
 .control-dots:active {
-  border: 0.25rem solid #c4c4c4;
+  border: 0.2rem solid #c4c4c4;
   background-color: #c4c4c4;
   box-shadow: 0 0 0.25rem rgb(255 255 255 / 75%);
 }
@@ -97,12 +129,25 @@ input {
   background-color: transparent;
 }
 
-/* Animation */
+#first:checked ~ .text-container > .text1,
+#second:checked ~ .text-container > .text2,
+#third:checked ~ .text-container > .text3,
+#fourth:checked ~ .text-container > .text4 {
+  display: block;
+}
 
+/* Animation */
 .first-slide,
 .second-slide,
 .third-slide,
 .fourth-slide {
   animation: backInDown 1s 1;
   /* animation-play-state: running !important; */
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+  animation: fadeIn 4s 1;
 }
