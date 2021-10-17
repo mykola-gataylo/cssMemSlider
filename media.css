@@ -1,4 +1,8 @@
 @media (min-width: 320px) and (max-width: 576px) {
+  .header-title {
+    font-size: 1.25rem;
+  }
+
   .control-container {
     align-self: center !important;
   }
@@ -15,5 +19,13 @@
     margin: 0 0 1rem;
     align-self: center;
     font-size: 1rem;
+  }
+
+  .rs-logo-icon {
+    height: 1.25rem !important;
+  }
+
+  .footer__text {
+    font-size: 0.75rem !important;
   }
 }
