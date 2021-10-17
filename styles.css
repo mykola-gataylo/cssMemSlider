@@ -1,9 +1,12 @@
+@import "./animation.css";
+
 /* Base */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* animation-play-state: paused !important; */
 }
 
 /* Container */
@@ -92,4 +95,14 @@ input {
 #third:checked ~ .control-container label:nth-of-type(3),
 #fourth:checked ~ .control-container label:nth-of-type(4) {
   background-color: transparent;
+}
+
+/* Animation */
+
+.first-slide,
+.second-slide,
+.third-slide,
+.fourth-slide {
+  animation: backInDown 1s 1;
+  /* animation-play-state: running !important; */
 }
