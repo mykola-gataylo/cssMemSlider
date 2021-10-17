@@ -125,11 +125,64 @@ input {
   display: block;
 }
 
-#first:checked ~ .control-container label:nth-of-type(1),
-#second:checked ~ .control-container label:nth-of-type(2),
-#third:checked ~ .control-container label:nth-of-type(3),
-#fourth:checked ~ .control-container label:nth-of-type(4) {
+#first:checked ~ .control-container label:nth-of-type(1) {
+  border: 0.2rem solid #ff7f27;
+  background-color: #ff7f27;
+}
+
+#first:checked ~ .control-container label:hover {
+  border: 0.2rem solid #fff;
   background-color: transparent;
+}
+
+#first:checked ~ .control-container label:active {
+  border: 0.2rem solid #fff;
+  background-color: #fff;
+}
+
+#second:checked ~ .control-container label:nth-of-type(2) {
+  border: 0.2rem solid #22b14c;
+  background-color: #22b14c;
+}
+
+#second:checked ~ .control-container label:hover {
+  border: 0.2rem solid #fff;
+  background-color: transparent;
+}
+
+#second:checked ~ .control-container label:active {
+  border: 0.2rem solid #fff;
+  background-color: #fff;
+}
+
+#third:checked ~ .control-container label:nth-of-type(3) {
+  border: 0.2rem solid #ffaec9;
+  background-color: #ffaec9;
+}
+
+#third:checked ~ .control-container label:hover {
+  border: 0.2rem solid #fff;
+  background-color: transparent;
+}
+
+#third:checked ~ .control-container label:active {
+  border: 0.2rem solid #fff;
+  background-color: #fff;
+}
+
+#fourth:checked ~ .control-container label:nth-of-type(4) {
+  border: 0.2rem solid #99d9ea;
+  background-color: #99d9ea;
+}
+
+#fourth:checked ~ .control-container label:hover {
+  border: 0.2rem solid #fff;
+  background-color: transparent;
+}
+
+#fourth:checked ~ .control-container label:active {
+  border: 0.2rem solid #fff;
+  background-color: #fff;
 }
 
 #first:checked ~ .text-container > .text1,
