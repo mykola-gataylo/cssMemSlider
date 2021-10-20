@@ -1,0 +1,88 @@
+@media (min-width: 320px) and (max-width: 576px) {
+  .header-title {
+    margin-top: 0;
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .control-container {
+    margin-top: 1.5rem;
+    transition: all 1s;
+    align-self: center !important;
+  }
+
+  .control-dots {
+    padding: 0.25rem !important;
+    display: block;
+    border-width: 0.15rem !important;
+  }
+
+  .control-dots:nth-child(-n + 6) {
+    margin-right: 0.55rem !important;
+  }
+
+  .text-container {
+    margin-top: 1rem !important;
+    align-self: center;
+    font-size: 1.25rem !important;
+    text-align: center;
+    order: 1;
+  }
+
+  .rs-logo-icon {
+    height: 1.25rem !important;
+  }
+
+  .footer__text {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media only screen and (device-width: 812px) and (device-height: 375px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .header {
+    padding: 0.1rem 0 0;
+  }
+
+  .wrapper {
+    width: 75% !important;
+    padding: 0 !important;
+    flex-direction: row !important;
+  }
+
+  .slides-container {
+    align-self: center;
+  }
+
+  .control-container {
+    height: 100%;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .control-dots::before {
+    padding: 0 1rem !important;
+  }
+
+  .control-dots:nth-child(-n + 6) {
+    margin-bottom: 0.5rem;
+  }
+
+  .text-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem 0 0 !important;
+    font-size: 1.25rem !important;
+    text-align: center;
+    order: -1;
+  }
+
+  .footer {
+    padding: 0 0.5rem 0.1rem;
+  }
+  .footer__text {
+    display: none;
+  }
+}

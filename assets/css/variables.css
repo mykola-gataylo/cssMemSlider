@@ -1,0 +1,15 @@
+:root {
+  --bg-main: #25282a;
+
+  --font-white: #fff;
+
+  --font-red: #ff0000;
+  --font-orange: #ff7f00;
+  --font-yellow: #ffff00;
+  --font-green: #00ff00;
+  --font-blue: #0000ff;
+  --font-indigo: #4b0082;
+  --font-violet: #9400d3;
+
+  --border-0-2rem: 0.2rem solid var(--font-white);
+}
