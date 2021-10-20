@@ -1,9 +1,10 @@
-@import "./assets/css/_variables.css";
+@import "./assets/css/variables.css";
 
-@import "./assets/css/_animation.css";
-@import "./assets/css/_header.css";
-@import "./assets/css/_footer.css";
-@import "./assets/css/_media.css";
+@import "./assets/css/animation.css";
+@import "./assets/css/header.css";
+@import "./assets/css/footer.css";
+
+@import "./assets/css/media.css";
 
 /* Base */
 
